@@ -619,7 +619,7 @@ teste4.src = '1_0s.mp3';
       
 // 40000 legend
 var height = 92
-var width = 150
+var width = 120
 var svg = d3.select("#my_dataviz40000")
   .append("svg")
     .attr("width", width)
@@ -682,7 +682,7 @@ var svg = d3.select("#my_dataviz20000")
 // The scale you use for bubble size
 var size = d3.scaleSqrt()
   .domain([1, 20000])  // What's in the data, let's say it is percentage
-  .range([1, 22])  // Size in pixel
+  .range([1, 24])  // Size in pixel
 
 // Add legend: circles
 var valuesToShow = [20000]
