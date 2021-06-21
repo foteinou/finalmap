@@ -726,7 +726,7 @@ svg
     .attr('alignment-baseline', 'middle')
     
      // 5000 legend
-var height = 60
+var height = 40
 var width = 200
 var svg = d3.select("#my_dataviz20000")
   .append("svg")
@@ -736,7 +736,7 @@ var svg = d3.select("#my_dataviz20000")
 // The scale you use for bubble size
 var size = d3.scaleSqrt()
   .domain([1, 5000])  // What's in the data, let's say it is percentage
-  .range([1, 7])  // Size in pixel
+  .range([1, 7.5])  // Size in pixel
 
 // Add legend: circles
 var valuesToShow = [5000]
@@ -794,7 +794,7 @@ var size = d3.scaleSqrt()
 
 // Add legend: circles
 var valuesToShow = [100.11]
-var xCircle = 55
+var xCircle = 56
 var xLabel = 110
 var yCircle = 5
 svg
