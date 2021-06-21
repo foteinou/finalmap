@@ -726,7 +726,7 @@ svg
     .attr('alignment-baseline', 'middle')
     
      // 5000 legend
-var height = 50
+var height = 60
 var width = 200
 var svg = d3.select("#my_dataviz20000")
   .append("svg")
@@ -740,9 +740,9 @@ var size = d3.scaleSqrt()
 
 // Add legend: circles
 var valuesToShow = [5000]
-var xCircle = 50
+var xCircle = 55
 var xLabel = 110
-var yCircle = 7
+var yCircle = 6
 svg
   .selectAll("legend")
   .data(valuesToShow)
