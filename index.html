@@ -445,10 +445,13 @@ teste4.src = '1_0s.mp3';
     
     
 
-    <script>
+     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiZm90ZWlub3UiLCJhIjoiY2pvMnNtNnA2MHB1ZjN0cnBxdnZxcDdibyJ9.SlBgkdnqkyt8tyfVE2DM5g"; // replace this with your access token
-   
+    var bounds = [
+[-252, -80], // Southwest coordinates
+[250, 80] // Northeast coordinates
+];
     
       var map = new mapboxgl.Map({
         container: "map", // Specify the container ID
@@ -456,7 +459,7 @@ teste4.src = '1_0s.mp3';
         center: [-20, 20], // Specify the starting position [lng, lat]
         maxZoom: 9, //Was: 18,
         minZoom: 1.2,
-
+ maxBounds: bounds // Sets bounds as max
       });
 
 
