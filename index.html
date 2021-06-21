@@ -736,13 +736,13 @@ var svg = d3.select("#my_dataviz20000")
 // The scale you use for bubble size
 var size = d3.scaleSqrt()
   .domain([1, 5000])  // What's in the data, let's say it is percentage
-  .range([1, 7])  // Size in pixel
+  .range([1, 6])  // Size in pixel
 
 // Add legend: circles
 var valuesToShow = [5000]
 var xCircle = 50
 var xLabel = 110
-var yCircle = 25
+var yCircle = 10
 svg
   .selectAll("legend")
   .data(valuesToShow)
