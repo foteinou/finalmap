@@ -26,25 +26,18 @@ var bleep = new Audio();
  var bleep2 = new Audio();
   var bleep3 = new Audio();
   var bleep4 = new Audio();
-  
-      
+   
   bleep.src = "0_1s.mp3";
-
-    
+   
   bleep2.src = "0_3s.mp3";
-
-  
+ 
   bleep3.src = "0_6s.mp3";
-
     
   bleep4.src = "1_0s.mp3";
  
- 
   bleep.load();
   
-  
   bleep2.load();
- 
   
   bleep3.load();
 
@@ -66,7 +59,7 @@ function loadContent(num){
         else if (num==4){
           bleep4.play(); // Play button sound now
         }  
-        
+       
 }
  
 </script>
@@ -511,16 +504,15 @@ teste4.src = '1_0s.mp3';
         // Change the cursor style as a UI indicator.
         map.getCanvas().style.cursor = "pointer";
   
-        if (e.features[0].properties.duration<=15 {
-          loadContent(1);
-        }
+        if (e.features[0].properties.duration<=15 {   loadContent(1);     }
+             
         else if (e.features[0].properties.duration<=30 {
           loadContent(2);
         }
-        else if (e.features[0].properties.duration<=60{
+        else if (e.features[0].properties.duration<=60 {
           loadContent(3);
         }
-        else if (e.features[0].properties.duration<=130 {
+        else if (e.features[0].properties.duration <=130 {
           loadContent(4);
         }
       
