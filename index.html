@@ -503,18 +503,21 @@ teste4.src = '1_0s.mp3';
       map.on("mouseenter", "100km2003_2016-dc71jn", function(e) {
         // Change the cursor style as a UI indicator.
         map.getCanvas().style.cursor = "pointer";
-  
-        if (e.features[0].properties.duration<=15 {   loadContent(1);     }
-             
-        else if (e.features[0].properties.duration<=30 {
+        
+    if (e.features[0].properties.duration<=15){
+          loadContent(1);
+        }
+        else if (e.features[0].properties.duration<=30){
           loadContent(2);
         }
-        else if (e.features[0].properties.duration<=60 {
+         else if (e.features[0].properties.duration<=60){
           loadContent(3);
         }
-        else if (e.features[0].properties.duration <=130 {
+         else if (e.features[0].properties.duration <140){
           loadContent(4);
         }
+        
+     
       
   
         var coordinates = e.features[0].geometry.coordinates.slice();
