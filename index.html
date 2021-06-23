@@ -23,79 +23,49 @@ $( document ).ready(function() {
     
 <script>
 var bleep = new Audio();
-var bleepL = new Audio();
-var bleepR = new Audio();
-
  var bleep2 = new Audio();
-  var bleep2L = new Audio();
-  var bleep2R = new Audio();
-  
   var bleep3 = new Audio();
-  var bleep3L = new Audio();
-  var bleep3R = new Audio();
-  
   var bleep4 = new Audio();
-    var bleep4L = new Audio();
-      var bleep4R = new Audio();
+  
       
   bleep.src = "0_1s.mp3";
-  bleepL.src = "L0_1s.mp3";
-  bleepR.src = "R0_1s.mp3";
+
     
   bleep2.src = "0_3s.mp3";
-  bleep2L.src = "L0_3s.mp3";
-  bleep2R.src = "R0_3s.mp3";
+
   
   bleep3.src = "0_6s.mp3";
-  bleep3L.src = "L0_6s.mp3";
-  bleep3R.src = "R0_6s.mp3";
+
     
   bleep4.src = "1_0s.mp3";
-  bleep4L.src = "L1_0s.mp3";
-  bleep4R.src = "R1_0s.mp3";
+ 
  
   bleep.load();
-  bleepL.load();
-  bleepR.load();
+  
   
   bleep2.load();
-  bleep2L.load();
-  bleep2R.load();
+ 
   
   bleep3.load();
-  bleep3L.load();
-  bleep3R.load();
+
   
   bleep4.load();
-  bleep4L.load();
-  bleep4R.load();
+
 
   
 function loadContent(num){
    if (num==1){
-          bleepL.play(); // Play button sound now
+          bleep.play(); // Play button sound now
         }
         else if (num==2){
-          bleepR.play(); // Play button sound now
+          bleep2.play(); // Play button sound now
         }
         else if (num==3){
-          bleep2L.play(); // Play button sound now
+          bleep3.play(); // Play button sound now
         }
         else if (num==4){
-          bleep2R.play(); // Play button sound now
-        }
-        else if (num==5){
-          bleep3R.play(); // Play button sound now
-        }
-        else if (num==6){
-          bleep3L.play(); // Play button sound now
-        }
-        else if (num==7){
-          bleep4R.play(); // Play button sound now
-        }
-        else if (num==8){
-          bleep4L.play(); // Play button sound now
-        }
+          bleep4.play(); // Play button sound now
+        }  
         
 }
  
@@ -541,34 +511,19 @@ teste4.src = '1_0s.mp3';
         // Change the cursor style as a UI indicator.
         map.getCanvas().style.cursor = "pointer";
   
-        if (e.features[0].properties.duration<=15 && e.features[0].properties.longitude<0) {
+        if (e.features[0].properties.duration<=15 {
           loadContent(1);
         }
-        else if (e.features[0].properties.duration<=15 && e.features[0].properties.longitude>0){
+        else if (e.features[0].properties.duration<=30 {
           loadContent(2);
         }
-        else if (e.features[0].properties.duration<=30 && e.features[0].properties.longitude<0 ){
+        else if (e.features[0].properties.duration<=60{
           loadContent(3);
         }
-        else if (e.features[0].properties.duration<=30 && e.features[0].properties.longitude>0) {
+        else if (e.features[0].properties.duration<=130 {
           loadContent(4);
         }
-        else if (e.features[0].properties.duration<=60 && e.features[0].properties.longitude<0 ){
-          loadContent(6);
-        }
-        else if (e.features[0].properties.duration<=60 && e.features[0].properties.longitude>0) {
-          loadContent(5);
-        }
-        else if (e.features[0].properties.duration<=130 && e.features[0].properties.longitude<0) {
-          loadContent(8);
-        }
-        else if (e.features[0].properties.duration<=130 &&  e.features[0].properties.longitude>0) {
-          loadContent(7);
-        }
-        
-        
       
-        
   
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description =
