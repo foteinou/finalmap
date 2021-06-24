@@ -304,7 +304,7 @@ h5 {font-family: "Times New Roman", serif;
     opacity:0;
   }
   .trailer.active{
-    visibility:visible;
+    visibility: visible;
     opacity:1;
   }
   .trailer video {
@@ -312,8 +312,8 @@ h5 {font-family: "Times New Roman", serif;
     max-width: 900px;
     outline:none;
   }
-  .close{
-    position:absolute;
+  .close {
+    position: absolute;
     top:30px;
     right:30px;
     cursor:pointer;
@@ -326,10 +326,6 @@ h5 {font-family: "Times New Roman", serif;
   }
   }
   
-  
-  
-
-
 
 </style>
   </head>
@@ -449,12 +445,12 @@ teste4.src = '1_0s.mp3';
   <script type="text/javascript">
     function toggle(){
       var trailer=document.querySelector(".trailer")
-       var video=document.querySelector(".video")
+       var video=document.querySelector("video")
       trailer.classList.toggle("active");
       video.pause();
       video.currentTime = 0;
-      
     }
+  </script>
  
 
       <div class="source"> <p> 
