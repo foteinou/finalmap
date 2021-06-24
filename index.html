@@ -27,21 +27,13 @@ var bleep = new Audio();
   var bleep3 = new Audio();
   var bleep4 = new Audio();
    
-  bleep.src = "0_1s.mp3";
-   
+  bleep.src = "0_1s.mp3"; 
   bleep2.src = "0_3s.mp3";
- 
-  bleep3.src = "0_6s.mp3";
-    
+  bleep3.src = "0_6s.mp3";   
   bleep4.src = "1_0s.mp3";
- 
-  bleep.load();
-  
-  bleep2.load();
-  
+  bleep.load();  
+  bleep2.load();  
   bleep3.load();
-
-  
   bleep4.load();
 
 
@@ -400,7 +392,6 @@ teste4.src = '1_0s.mp3';
 
 </script>
 
-    
     <div id="console_pm">
       <h1>Audiovisual Fire Μap - Hear the fire</h1>
       <h2> In this map the sound parameter is the length of time the sound is heard. </h2>
@@ -454,7 +445,20 @@ teste4.src = '1_0s.mp3';
   
 </div> 
   <button class="btn btn-success" onclick=" window.open('Music of Wildfires_.html','_blank')"> Animated chart </button>
-<div class="banner">
+
+ 
+
+      <div class="source"> <p> 
+         <h2>      Data source:
+          <a href="http://www.globalfiredata.org/fireatlas.html"
+            >Global Fire Atlas</a
+          ></h2>
+        </p>
+      </div> <h2>
+      Map authored: Aikaterini G. Foteinou</h2>
+    </div>
+ 
+    <div class="banner">
   <div class="content">
   <a href="#" onclick="toggle();">Sonified data</a>
   </div>
@@ -472,19 +476,6 @@ teste4.src = '1_0s.mp3';
       video.currentTime = 0;
       
     }
- 
-
-      <div class="source"> <p> 
-         <h2>      Data source:
-          <a href="http://www.globalfiredata.org/fireatlas.html"
-            >Global Fire Atlas</a
-          ></h2>
-        </p>
-      </div> <h2>
-      Map authored: Aikaterini G. Foteinou</h2>
-    </div>
- 
-    
     
 
      <script>
