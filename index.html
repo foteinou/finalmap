@@ -304,8 +304,7 @@ h5 {font-family: "Times New Roman", serif;
     letter-spacing: 2px;
     text-decoration:none;
     display:inline-block;
-    padding:10px 15px;
-    
+    padding:10px 15px; 
   }
   .trailer {position:fixed;
     top:50%;
@@ -320,6 +319,10 @@ h5 {font-family: "Times New Roman", serif;
     align-items:center;
     visibility:hidden;
     opacity:0;
+  }
+  .trailer.active{
+    visibility:visible;
+    opacity:1;
   }
   .trailer video{
     position:relative;
@@ -453,16 +456,18 @@ teste4.src = '1_0s.mp3';
   <button class="btn btn-success" onclick=" window.open('Music of Wildfires_.html','_blank')"> Animated chart </button>
 <div class="banner">
   <div class="content">
-  <a href="#">Sonified data</a>
+  <a href="#" onclick="toggle();">Sonified data</a>
   </div>
    </div>
   <div class="trailer">
     <video src="metimes2.mp4" controls="true"></video>
-    <img src="closebutton.png" class="close">
-         
-    
-    
+    <img src="closebutton.png" class="close" onclick="toggle();">
   </div>
+  <script type="text/javascript">
+    function toggle(){
+      var trailer=document.querySelector(".trailer")
+      trailer.classList.toggle("active")
+    }
  
 
       <div class="source"> <p> 
