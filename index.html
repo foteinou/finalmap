@@ -62,35 +62,7 @@ function loadContent(num){
        
 }
  
-</script>
-    <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
+    
 </script>
 <style > body {
   margin: 0;
@@ -422,7 +394,6 @@ teste4.src = '1_0s.mp3';
      <li><span style='background:#FFFFFF; border: 4px solid grey;height: 21px;'onmouseover="teste4.play()"></span><=130</li><p>
   </ul>
 </div>
-   <div w3-include-html="file:///C:/Users/F_katerin/Documents/%CE%9C%CE%95%CE%A4%CE%91%CE%A0%CE%A4%CE%A5%CE%A7%CE%99%CE%91%CE%9A%CE%9F/%CE%95%CE%A1%CE%95%CE%A5%CE%9D%CE%97%CE%A4%CE%99%CE%9A%CE%91%20%CE%98%CE%95%CE%9C%CE%91%CE%A4%CE%91%20%CE%A3%CE%A4%CE%91%20%CE%A3%CE%93%CE%A0/%CE%B3%CE%B9%CE%B1%20%CE%9C%CE%95%CE%A4%CE%91%CE%A0%CE%A4%CE%A5%CE%A7%CE%99%CE%91%CE%9A%CE%97%20%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%99%CE%91/sonification_sandbox_6.2beta/Music%20of%20Wildfires_.html"></div> 
   
 </div> 
  
@@ -879,7 +850,7 @@ mapboxgl: mapboxgl
 })
 );
   
-    includeHTML();
+   
     </script>
   </body>
 </html>
