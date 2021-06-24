@@ -466,7 +466,11 @@ teste4.src = '1_0s.mp3';
   <script type="text/javascript">
     function toggle(){
       var trailer=document.querySelector(".trailer")
-      trailer.classList.toggle("active")
+       var video=document.querySelector(".video")
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+      
     }
  
 
